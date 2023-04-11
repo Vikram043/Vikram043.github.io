@@ -454,7 +454,7 @@
     z-index: 5;
   }
   
-  .navbar-list {
+  #nav-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1368,7 +1368,7 @@
   
     .navbar { border-radius: 20px 20px 0 0; }
   
-    .navbar-list { gap: 20px; }
+    #nav-menu { gap: 20px; }
   
     .navbar-link { --fs-8: 14px; }
   
@@ -1703,7 +1703,7 @@
       box-shadow: none;
     }
   
-    .navbar-list {
+    #nav-menu {
       gap: 30px;
       padding: 0 20px;
     }
