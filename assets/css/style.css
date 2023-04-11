@@ -1,7 +1,3 @@
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
     /**
@@ -318,12 +314,13 @@
     gap: 15px;
   }
   
-  .avatar-box {
-    /* background: var(--bg-gradient-onyx); */
+  /* .avatar-box {
+    background: var(--bg-gradient-onyx); 
     border-radius: 20px;
-  }
+  } */
   .avatar-box>img {
-    border-radius: 50%;
+    border-radius: 50%; 
+    height:150px;
   }
   
   .info-content .name {
@@ -1301,7 +1298,12 @@
       border-radius: 12px;
       font-size: 18px;
     }
-  
+    #list{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      width: 100px;
+    }
   
   
     /**
@@ -1862,7 +1864,13 @@
   
     .social-list { justify-content: center; }
   
-  
+  #list{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+  }
+ 
   
     /**
        * RESUME
