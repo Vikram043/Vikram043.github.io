@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
+  <title>Portfolio</title>
 
   <!--
     - favicon
@@ -37,18 +37,18 @@
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+    <aside class="sidebar" id="home" class="nav-link home" data-sidebar>
 
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/Image.jpg" alt="Vikram Naik" width="80">
+          <img src="./assets/images/Image.jpg" class="home-img" alt="Vikram Naik" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Vikram Naik">Vikram Naik</h1>
+          <h1 class="name" id="user-detail-name" title="Vikram Naik">Vikram Naik</h1>
 
-          <p class="title">Web developer</p>
+          <p class="title" id="user-detail-intro" >Full Stack Web developer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -88,7 +88,7 @@
             <div class="contact-info">
               <p class="contact-title">Phone</p>
 
-              <a href="" class="contact-link">8496834661</a>
+              <a href="tel:8496834661" class="contact-link">+91 8496834661</a>
             </div>
 
           </li>
@@ -112,7 +112,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title"></p>
+              <p class="contact-title">Git Hub</p>
               <a href="https://github.com/Vikram043" class="contact-link">Vikram043</a>
             </div>
 
@@ -131,6 +131,7 @@
             </div>
 
           </li>
+
 
         </ul>
 
@@ -176,29 +177,33 @@
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+      <nav class="navbar" id="nav-menu">
 
-        <ul id="nav-menu">
+        <div class="logo">
+          <h4><a href="#home"></a></h4>
+      </div>
+
+        <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <a href="#about"><button class="navbar-link nav-link about active" data-nav-link>About</button></a>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+           <a href="#Resume"><button class="navbar-link nav-link skills" data-nav-link>Resume</button></a> 
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
+            <a href="#projects"><button class="navbar-link nav-link projects" data-nav-link>Project</button></a> 
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Skills</button>
+            <a href="#skills"><button class="navbar-link nav-link contact" data-nav-link>Skills</button></a> 
           </li>
 
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li> -->
+          <li class="navbar-item">
+            <a href="#contact"><button class="navbar-link nav-link contact" data-nav-link>Contact</button></a> 
+          </li>
 
         </ul>
 
@@ -212,13 +217,13 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article  class="about  active" data-page="about">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
 
-        <section class="about-text">
+        <section  class="about-text about-section">
           <p>
             Hi there! My name is Vikram Naik and I'm a Node.js full stack developer. I'm passionate about using technology to solve complex problems and improve people's lives.</p>
             <p>
@@ -236,31 +241,7 @@
           </p>
         </section>
 
-
-        <!--
-          - service
-        -->
-
-        
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </section>
-
-        </div> 
-
-
+      
       </article>
 
 
@@ -369,79 +350,21 @@
 
 
 
+
       <!--
         - #PORTFOLIO
       -->
 
-      <article class="Projects" data-page="projects">
+      <article class="portfolio" data-page="project">
 
         <header>
-          <h2 class="h2 article-title">Projects</h2>
+          <h2 class="h2 article-title">Project</h2>
         </header>
 
         <section class="projects">
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Shop.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Shopclues Clone</h3>
-
-                <div id="list">
-                  <div class="contact-item" >
-                   <a href="https://funny-froyo-047cad.netlify.app"><div class="icon-box">
-                    <ion-icon name="share-outline"></ion-icon>
-                    </div>
-                  </a>
-                  </div>
-                  <a href="https://github.com/Vikram043/trusty-business-1776">
-                    <div class="contact-item">
-                      <div class="icon-box">
-                        <ion-icon name="logo-github"></ion-icon>
-                      </div>
-                    </div>
-                  </a> 
-                </div>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets//images/flower.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Flower.Com clone</h3>
-
-                <div id="list">
-                  <div class="contact-item" >
-                   <a href="https://delightful-begonia-884945.netlify.app"><div class="icon-box">
-                    <ion-icon name="share-outline"></ion-icon>
-                    </div>
-                  </div></a>
-                  <a href="https://github.com/Rajat24111994/casual-metal-9545">
-                    <div class="contact-item">
-                      <div class="icon-box">
-                      <ion-icon name="logo-github"></ion-icon>
-                      </div>
-                    </div>
-                  </a> 
-                </div>
-            </li>
-
             <li class="project-item  active" data-filter-item data-category="web design">
               <a href="#">
 
@@ -450,57 +373,111 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/Passbook.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/Shop.png" alt="fundo" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Indian Mart</h3>
-                <div id="list">
-                  <div class="contact-item" >
-                   <a href="https://phenomenal-cascaron-3d9e3d.netlify.app"><div class="icon-box">
-                    <ion-icon name="share-outline"></ion-icon>
-                    </div>
-                  </div></a>
-                  <a href="https://github.com/Vikram043/adaptable-oven-8035">
-                    <div class="contact-item">
-                      <div class="icon-box">
-                        <ion-icon name="logo-github"></ion-icon>
-                      </div>
-                    </div>
-                  </a> 
-                </div>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Shop.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Shopclues Clone</h3>
-
-                <div id="list">
-                  <div class="contact-item" >
-                   <a href="https://funny-froyo-047cad.netlify.app"><div class="icon-box">
-                    <ion-icon name="share-outline"></ion-icon>
-                    </div>
-                  </a>
-                  <a href="https://github.com/Vikram043/trusty-business-1776">
-                    <div class="contact-item">
-                      <div class="icon-box">
-                        <ion-icon name="logo-github"></ion-icon>
-                      </div>
-                    </div>
-                  </a> 
-                </div>
-              
-             </a>
               </a>
+
+                <h3 class="project-title">Shop Clues Clone</h3>
+
+                <p class="project-category"></p>
+
+                <div class="li">
+                  <a href="https://funny-froyo-047cad.netlify.app"><button class="logolist">
+                    <ion-icon name="share-outline"></ion-icon>
+                </button></a>
+                <a href="https://github.com/Vikram043/trusty-business-1776"><button class="logolist">
+                  <ion-icon  name="logo-github"></ion-icon>
+              </button></a>
+                </div>
+
             </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/flower.png" alt="brawlhalla" loading="lazy">
+                </figure>
+              </a>
+                <h3 class="project-title">FLowers.com Clone</h3>
+
+                <p class="project-category"></p>
+
+                <div class="li">
+                  <div>
+                    <a href="https://delightful-begonia-884945.netlify.app"><button class="logolist">
+                      <ion-icon name="share-outline"></ion-icon>
+                  </button></a>
+                  </div>
+                  <div>
+                    <a href="https://github.com/Rajat24111994/casual-metal-9545"><button class="logolist">
+                      <ion-icon  name="logo-github"></ion-icon>
+                  </button></a>
+                  </div>
+                </div>
+
+              
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Passbook.jpg" alt="dsm." loading="lazy">
+                </figure>
+
+              </a>
+                <h3 class="project-title">Indian Mart Clone</h3>
+
+                <p class="project-category"></p>
+
+                <div class="li">
+                  <a href="https://phenomenal-cascaron-3d9e3d.netlify.app"><button class="logolist">
+                    <ion-icon name="share-outline"></ion-icon>
+                </button></a>
+                <a href="https://github.com/Vikram043/adaptable-oven-8035"><button class="logolist">
+                  <ion-icon  name="logo-github"></ion-icon>
+              </button></a>
+                </div>
+
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Shop.png" alt="metaspark" loading="lazy">
+                </figure>
+              </a>
+                <h3 class="project-title">Shop Clues Clone</h3>
+
+                <p class="project-category"></p>
+                
+                <div class="li">
+                  <a href="https://funny-froyo-047cad.netlify.app"><button class="logolist">
+                    <ion-icon name="share-outline"></ion-icon>
+                </button></a>
+                <a href="https://github.com/Vikram043/trusty-business-1776"><button class="logolist">
+                  <ion-icon  name="logo-github"></ion-icon>
+              </button></a>
+                </div>
+                
+            </li>
+
+
 
           </ul>
 
@@ -588,140 +565,40 @@
 
 
 
-
       <!--
         - #CONTACT
       -->
 
-      <!-- <article class="contact" data-page="contact">
+      <article class="contact" data-page="contact">
 
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
-        <aside class="sidebar" data-sidebar>
+        <section  class="contact-form">
 
-          <div class="sidebar-info">
-    
-    
-            <div class="info-content">
-              <h1 class="name" title="Vikram Naik">Vikram Naik</h1>
-    
-              <p class="title">Web developer</p>
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
-    
-            <button class="info_more-btn" data-sidebar-btn>
-              <span>Show Contacts</span>
-    
-              <ion-icon name="chevron-down"></ion-icon>
-            </button>
-    
-          </div>
-    
-          <div class="sidebar-info_more">
-    
-            <div class="separator"></div>
-    
-            <ul class="contacts-list">
-    
-              <li class="contact-item">
-    
-                <div class="icon-box">
-                  <ion-icon name="mail-outline"></ion-icon>
-                </div>
-    
-                <div class="contact-info">
-                  <p class="contact-title">Email</p>
-    
-                  <a href="mailto:knowme962@gmail.com" class="contact-link">knowme962@gmail.com</a>
-                </div>
-    
-              </li>
-    
-              <li class="contact-item">
-    
-                <div class="icon-box">
-                  <ion-icon name="phone-portrait-outline"></ion-icon>
-                </div>
-    
-                <div class="contact-info">
-                  <p class="contact-title">Phone</p>
-    
-                  <a href="" class="contact-link">8496834661</a>
-                </div>
-    
-              </li>
-    
-              <li class="contact-item">
-    
-                <div class="icon-box">
-                <ion-icon name="logo-linkedin"></ion-icon>
-                </div>
-    
-                <div class="contact-info">
-                  <p class="contact-title">linkedin</p>
-                  <a href="" class="contact-link">vikram-naik</a>
-                </div>
-    
-              </li>
-              <li class="contact-item">
-    
-                <div class="icon-box">
-                    <ion-icon name="logo-github"></ion-icon>
-                </div>
-    
-                <div class="contact-info">
-                  <p class="contact-title"></p>
-                  <a href="" class="contact-link">Vikram043</a>
-                </div>
-    
-              </li>
-    
-              <li class="contact-item">
-    
-                <div class="icon-box">
-                  <ion-icon name="location-outline"></ion-icon>
-                </div>
-    
-                <div class="contact-info">
-                  <p class="contact-title">Location</p>
-    
-                  <address>Honnavar Karnataka</address>
-                </div>
-    
-              </li>
-    
-            </ul>
-    
-            <div class="separator"></div>
-    
-            <ul class="social-list">
-    
-              <li class="social-item">
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
-    
-              <li class="social-item">
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
-    
-              <li class="social-item">
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-              </li>
-    
-            </ul>
-    
-          </div>
-    
-        </aside>
 
-      </article> -->
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
 
     </div>
 
