@@ -961,7 +961,39 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
-
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+.card h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.card img {
+  margin: 10px 0;
+  max-width: 100%;
+}
 
 
 
