@@ -1,0 +1,65 @@
+.slider2{
+  width: 100%;
+  /* max-width: 100vw; */
+  height: 200px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.slider2 .list2{
+  position: absolute;
+  width: max-content;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  transition: 1s;
+}
+.slider2 .list2 img{
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+.slider2 .buttons2{
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.slider2 .buttons2 button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: rgb(27, 27, 27);
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 25px;
+}
+.slider2 .dots2{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.slider2 .dots2 li{
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(63, 63, 63);
+  margin: 10px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.slider2 .dots2 li.active3{
+  width: 30px;
+}
