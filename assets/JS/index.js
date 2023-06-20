@@ -95,7 +95,7 @@ contactSubmit.onclick = async (e) => {
     if(Email.ok){
       console.log('Msg received');
       alert('Thanks for reaching out, Your email sent successfully!!')
-      window.location.reload()
+      //window.location.reload()
       contactName.value = null;
       contactEmail.value = null;
       contactMessage.value = null;
