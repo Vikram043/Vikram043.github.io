@@ -64,6 +64,7 @@ inputs.forEach((input) => {
 const contactName = document.getElementById("contactName");
 const contactEmail = document.getElementById("contactEmail");
 const contactMessage = document.getElementById("contactMessage");
+const contactPhone = document.getElementById("contact-phone");
 
 const contactSubmit = document.getElementById("contactSubmit");
 contactSubmit.onclick = async (e) => {
@@ -99,13 +100,15 @@ contactSubmit.onclick = async (e) => {
       contactName.value = null;
       contactEmail.value = null;
       contactMessage.value = null;
-     
+      contactPhone.value = null;
     }
     
   } catch (err) {
     console.log(err);
+    alert(err.message)
     contactName.value = null;
       contactEmail.value = null;
       contactMessage.value = null;
+      contactPhone.value = null;
   }
 };
