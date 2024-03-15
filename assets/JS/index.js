@@ -72,7 +72,7 @@ contactSubmit.onclick = async (e) => {
   console.log([contactName.value, contactEmail.value, contactMessage.value]);
 
   const data = {
-    service_id: 'u0fO5pSOykphkxmXZ',
+    service_id: 'service_kalif91',
     template_id: 'template_zdc4k9h',
     user_id: 'u0fO5pSOykphkxmXZ',
     template_params: {
